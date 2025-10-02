@@ -80,27 +80,3 @@ Bu proje sürecinde:
 - **Packages**  
   ![Packages](Images/Packages.png)  
 
-- **Admin Feature**  
-  ![Admin Feature](Images/Admin_Feature.png)  
-
----
-
-### 📊 Dashboard  
-![Dashboard](Images/Dashboard.png)  
-
----
-
-## ⚡ Projeyi Çalıştırma  
-
-```bash
-# Projeyi klonla
-git clone https://github.com/kullaniciadi/BepopStream.git
-
-# Proje klasörüne gir
-cd BepopStream
-
-# Migration ve veritabanı güncelle
-dotnet ef database update
-
-# Uygulamayı başlat
-dotnet run
