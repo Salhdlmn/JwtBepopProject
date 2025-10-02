@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\views\\discover\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\views\\discover\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\services\\recommendationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\services\\recommendationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\controllers\\discovercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\controllers\\discovercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\models\\discoverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\models\\discoverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\controllers\\recommendationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\controllers\\recommendationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\entities\\playhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\entities\\playhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\models\\ml\\songprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\models\\ml\\songprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\models\\ml\\songrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\models\\ml\\songrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\controllers\\chartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\controllers\\chartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|c:\\users\\monster\\source\\repos\\bepopstreamproject\\bepopstreamproject\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C23E4C-E33D-4080-83C4-014807DB3A63}|BepopStreamProject\\BepopStreamProject.csproj|solutionrelative:bepopstreamproject\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BepopStreamProject\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T20:43:29.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "BepopStreamProject\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T20:23:36.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BepopStreamProject\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:23:30.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Views\\Discover\\Index.cshtml",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Views\\Discover\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Views\\Discover\\Index.cshtml",
+              "RelativeToolTip": "BepopStreamProject\\Views\\Discover\\Index.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAJIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T20:21:33.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DiscoverViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Models\\DiscoverViewModel.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Models\\DiscoverViewModel.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Models\\DiscoverViewModel.cs",
+              "RelativeToolTip": "BepopStreamProject\\Models\\DiscoverViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:16:48.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecommendationService.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Services\\RecommendationService.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Services\\RecommendationService.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Services\\RecommendationService.cs",
+              "RelativeToolTip": "BepopStreamProject\\Services\\RecommendationService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:48:38.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiscoverController.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\DiscoverController.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Controllers\\DiscoverController.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\DiscoverController.cs",
+              "RelativeToolTip": "BepopStreamProject\\Controllers\\DiscoverController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowC8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:34:16.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MembershipController.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\MembershipController.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Controllers\\MembershipController.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\MembershipController.cs",
+              "RelativeToolTip": "BepopStreamProject\\Controllers\\MembershipController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:12:52.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RecommendationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\RecommendationsController.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Controllers\\RecommendationsController.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\RecommendationsController.cs",
+              "RelativeToolTip": "BepopStreamProject\\Controllers\\RecommendationsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:03:35.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Program.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Program.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Program.cs",
+              "RelativeToolTip": "BepopStreamProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:41:20.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Entities\\PlayHistory.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Entities\\PlayHistory.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Entities\\PlayHistory.cs",
+              "RelativeToolTip": "BepopStreamProject\\Entities\\PlayHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:04:33.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SongPrediction.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Models\\ML\\SongPrediction.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Models\\ML\\SongPrediction.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Models\\ML\\SongPrediction.cs",
+              "RelativeToolTip": "BepopStreamProject\\Models\\ML\\SongPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:46:21.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SongRating.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Models\\ML\\SongRating.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Models\\ML\\SongRating.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Models\\ML\\SongRating.cs",
+              "RelativeToolTip": "BepopStreamProject\\Models\\ML\\SongRating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:45:51.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChartController.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\ChartController.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Controllers\\ChartController.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\ChartController.cs",
+              "RelativeToolTip": "BepopStreamProject\\Controllers\\ChartController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwE0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:35:12.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SongsController.cs",
+              "DocumentMoniker": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\SongsController.cs",
+              "RelativeDocumentMoniker": "BepopStreamProject\\Controllers\\SongsController.cs",
+              "ToolTip": "C:\\Users\\Monster\\source\\repos\\BepopStreamProject\\BepopStreamProject\\Controllers\\SongsController.cs",
+              "RelativeToolTip": "BepopStreamProject\\Controllers\\SongsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T19:34:56.257Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

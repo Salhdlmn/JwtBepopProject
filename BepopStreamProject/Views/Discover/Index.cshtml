@@ -1,0 +1,486 @@
+﻿@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@{
+	var userLevel = User.GetUserLevel();
+	var userId = User.GetUserId();
+}
+<div>
+	<div class="page-content page-container" id="page-content">
+		<div class="padding sr">
+			<div class="page-hero">
+				<div class="media bg-media">
+					<div class="media-content" style="background-image:url(/Bepop/assets/img/b9.jpg)"></div>
+				</div>
+				<div class="slick" data-plugin="slick" data-option="{
+        slidesToShow: 1,
+          slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        fade: true,
+        autoplay: false,
+        rtl: false
+      }">
+					<div data-bg="../assets/img/b9.jpg">
+						<div class="pos-rlt">
+							<h2 class="display-3 font-weight-bold text-white">Müziğin Büyüsüne Kapıl</h2>
+							<div class="col-6 px-0 py-3 text-muted">
+								<p>Ruhunu harekete geçiren harika şarkılara dal. Yeni sesleri keşfet, favori hitlerini yeniden keşfet ve müziğin keyfini hiç olmadığı kadar çıkar.</p>
+							</div>
+							<a href="genres.html" class="btn ajax btn-rounded gd-primary text-white">Keşfet</a>
+							<a href="#" class="btn no-bg text-white">Paylaş</a>
+						</div>
+					</div>
+					<div data-bg="../assets/img/b0.jpg" style="visibility: hidden">
+						<div class="pos-rlt">
+							<h2 class="display-3 font-weight-bold text-white">Bepop'da En Popüler Listeler</h2>
+							<div class="col-6 px-0 py-3 text-muted">
+								<p>Bepop’un en popüler listelerine göz at. Trend olan hitlerden zamansız klasiklere kadar, dünyada kalpleri fetheden şarkıları keşfet.</p>
+							</div>
+							<a href="charts.html" class="btn ajax btn-rounded gd-primary text-white">Keşfet</a>
+							<a href="#" class="btn no-bg text-white">Paylaş</a>
+						</div>
+					</div>
+					<div data-bg="../assets/img/b19.jpg" style="visibility: hidden">
+						<div class="pos-rlt">
+							<h2 class="display-3 font-weight-bold text-white">Favori Sanatçını Bul</h2>
+							<div class="col-6 px-0 py-3 text-muted">
+								<p>Favori sanatçılarını keşfet ve en iyi parçalarını dinle. Çalma listelerini her gün ilhamla dolduran seslerle buluş.</p>
+							</div>
+							<a href="artists.html" class="btn ajax btn-rounded gd-primary text-white">Keşfet</a>
+							<a href="#" class="btn no-bg text-white">Paylaş</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="heading pt-5 pb-3 d-flex ">
+				<div>
+					<div class="text-muted sr-item">Haftalık</div>
+					<h5 class="text-highlight sr-item">En çok dinlenen şarkılar</h5>
+				</div>
+				<span class="flex"></span>
+			</div>
+			<div class="slick slick-visible slick-arrow-top row sr-item" data-plugin="slick" data-option="{
+   slidesToShow: 6,
+      slidesToScroll: 1,
+      dots: false,
+      rtl: false,
+      responsive: [
+     {
+       breakpoint: 1200,
+       settings: {
+         slidesToShow: 6
+       }
+     },
+     {
+       breakpoint: 920,
+       settings: {
+         slidesToShow: 4
+       }
+     },
+     {
+       breakpoint: 768,
+       settings: {
+         slidesToShow: 3
+       }
+     },
+     {
+       breakpoint: 576,
+       settings: {
+         slidesToShow: 2
+       }
+     }
+   ]
+    }">
+				@foreach (SongViewModel item in Model.TopTracks)
+				{
+					<div class="col-2" data-id="@item.SongId" data-level="@item.Level" data-source="@item.FileUrl">
+						<div class="list-item slick-item r list-hover mb-3">
+							<div class="media">
+								<a href="#" class="ajax media-content" style="background-image:url(@item.ImageUrl)"></a>
+
+								<div class="media-action media-action-overlay">
+									<button class="btn btn-icon no-bg no-shadow hide-row" data-toggle-class>
+										<i data-feather="heart" class="active-fill"></i>
+									</button>
+
+									@if (userLevel >= item.Level)
+									{
+										<button class="btn btn-raised btn-icon btn-rounded bg--white btn-play" >
+											<i data-feather="play"></i>
+										</button>
+									}
+									else
+									{
+										<button class="btn btn-icon btn-rounded bg--gray" disabled title="Seviyen yetersiz">
+											<i data-feather="lock"></i>
+										</button>
+									}
+
+									<button class="btn btn-icon no-bg no-shadow hide-row btn-more" data-toggle="dropdown">
+										<i data-feather="more-horizontal"></i>
+									</button>
+									<div class="dropdown-menu dropdown-menu-right"></div>
+								</div>
+							</div>
+
+							<div class="list-content text-center">
+								<div class="list-body">
+									<a href="#" class="list-title title ajax h-1x">
+										@item.Title
+									</a>
+									<a href="#" class="list-subtitle d-block text-muted h-1x subtitle ajax">
+										@item.ArtistName
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				}
+
+
+
+
+
+		</div>
+	</div>
+		<div class="container my-5">
+			<div class="heading pt-5 pb-3 d-flex ">
+				<div>
+					<div class="text-muted sr-item">Sana Özel</div>
+					<h5 class="text-highlight sr-item">Önerilen Şarkılar</h5>
+				</div>
+				<span class="flex"></span>
+			</div>
+			<div class="row">
+				@if (Model.RecommendedSongs != null && Model.RecommendedSongs.Count > 0)
+				{
+					foreach (var item in Model.RecommendedSongs)
+					{
+						<div class="col-2" data-id="@item.SongId" data-level="@item.Level" data-source="@item.FileUrl">
+							<div class="list-item slick-item r list-hover mb-3">
+								<div class="media">
+									<a href="#" class="ajax media-content" style="background-image:url(@item.ImageUrl)"></a>
+
+									<div class="media-action media-action-overlay">
+										<!-- Favori butonu -->
+										<button class="btn btn-icon no-bg no-shadow hide-row" data-toggle-class>
+											<i data-feather="heart" class="active-fill"></i>
+										</button>
+
+										<!-- Play veya Lock -->
+										@if (userLevel >= item.Level)
+										{
+											<button class="btn btn-raised btn-icon btn-rounded bg-white btn-play">
+												<i data-feather="play"></i>
+											</button>
+										}
+										else
+										{
+											<button class="btn btn-icon btn-rounded bg-gray" disabled title="Seviyen yetersiz">
+												<i data-feather="lock"></i>
+											</button>
+										}
+
+										<!-- More actions -->
+										<button class="btn btn-icon no-bg no-shadow hide-row btn-more" data-toggle="dropdown">
+											<i data-feather="more-horizontal"></i>
+										</button>
+										<div class="dropdown-menu dropdown-menu-right"></div>
+									</div>
+								</div>
+
+								<div class="list-content text-center">
+									<div class="list-body">
+										<a href="#" class="list-title title ajax h-1x">@item.Title</a>
+										<a href="#" class="list-subtitle d-block text-muted h-1x subtitle ajax">@item.ArtistName</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				}
+				else
+				{
+					<div class="col-12 text-center text-muted">
+						<p>Önerilen şarkı bulunamadı 🎶</p>
+					</div>
+				}
+			</div>
+		</div>
+	<div class="heading pt-5 pb-3 d-flex ">
+		<div>
+			<div class="text-muted sr-item">Sana Özel</div>
+			<h5 class="text-highlight sr-item">Albümler</h5>
+		</div>
+		<span class="flex"></span>
+	</div>
+	<div class="row row-md">
+			@foreach (AlbumViewModel album in Model.FeaturedAlbums)
+			{
+				<div class="col-4 col-md-3 col-lg-2 col-xl-1-8" data-id="@album.AlbumId" data-category="Album">
+					<div class="list-item r list-hover mb-3">
+						<div class="media">
+							<a href="@Url.Action("Details", "Albums", new { id = album.AlbumId })"
+							   class="ajax media-content"
+							   style="background-image:url(@album.CoverImageUrl)">
+							</a>
+						</div>
+
+						<div class="list-content text-center">
+							<div class="list-body">
+								<a href="@Url.Action("Details", "Albums", new { id = album.AlbumId })"
+								   class="list-title title ajax h-1x">
+									@album.Title
+								</a>
+								<div class="list-subtitle d-block text-muted h-1x subtitle ajax">
+									@album.ArtistName
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="heading pt-5 pb-3 d-flex ">
+				<div>
+					<div class="text-muted sr-item">User</div>
+					<h5 class="text-highlight sr-item">En Son Eklenenler</h5>
+				</div>
+				<span class="flex"></span>
+			</div>
+			<div class="row list-row list-index">
+					@foreach (var song in Model.RecentlyAdded)
+					{
+						<div class="col-12" data-id="@song.SongId" data-category="song" data-tag="all" data-source="@song.FileUrl">
+							<div class="list-item r list-hover mb-3">
+								<div class="media">
+									<a href="@Url.Action("Details", "Songs", new { id = song.SongId })"
+									   class="ajax media-content"
+									   style="background-image:url(@song.ImageUrl)">
+									</a>
+
+									<div class="media-action media-action-overlay">
+										<button class="btn btn-icon no-bg no-shadow hide-row" data-toggle-class>
+											<i data-feather="heart" class="active-fill"></i>
+										</button>
+
+
+										@if (userLevel >= song.Level)
+										{
+											<button class="btn btn-raised btn-icon btn-rounded bg--white btn-play"
+													onclick="location.href='@Url.Action("Play", "Songs", new { songId = song.SongId })'">
+												<i data-feather="play"></i>
+											</button>
+										}
+										else
+										{
+											<button class="btn btn-icon btn-rounded bg--gray" disabled title="Seviyen yetersiz">
+												<i data-feather="lock"></i>
+											</button>
+										}
+
+
+										<button class="btn btn-icon no-bg no-shadow hide-row btn-more" data-toggle="dropdown">
+											<i data-feather="more-horizontal"></i>
+										</button>
+										<div class="dropdown-menu dropdown-menu-right"></div>
+									</div>
+								</div>
+
+								<div class="list-content text-center">
+									<div class="list-body">
+										<a href="@Url.Action("Details", "Songs", new { id = song.SongId })"
+										   class="list-title title ajax h-1x">
+											@song.Title
+										</a>
+										<a href="#" class="list-subtitle d-block text-muted h-1x subtitle ajax">
+											@song.ArtistName
+										</a>
+									</div>
+								</div>
+
+								<div class="list-action show-row">
+									<div class="d-flex align-items-center">
+										<div class="px-3 text-sm text-muted d-none d-md-block">
+											@* Buraya duration eklenebilir (şimdilik sabit değer) *@
+											03:45
+										</div>
+										<button class="btn btn-icon no-bg no-shadow" data-toggle-class>
+											<i data-feather="heart" class="active-primary"></i>
+										</button>
+										<button class="btn btn-icon no-bg no-shadow btn-more" data-toggle="dropdown">
+											<i data-feather="more-horizontal"></i>
+										</button>
+										<div class="dropdown-menu dropdown-menu-right"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+
+			</div>
+		</div>
+			<div class="col-md-6">
+				<div class="heading pt-5 pb-3 d-flex ">
+					<div>
+						<div class="text-muted sr-item">Yaklaşan</div>
+						<h5 class="text-highlight sr-item">Etkinlikler</h5>
+					</div>
+					<span class="flex"></span>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="list-item list-overlay r mb-3">
+							<div class="media media-4x3 gd-primary">
+								<a href="blog.detail.html#" class="ajax media-content " style="background-image:url()">
+								</a>
+								<div class="media-action ">
+								</div>
+							</div>
+							<div class="list-content p-4">
+								<div class="list-body ">
+									<a href="blog.detail.html#" class="list-title title ajax h5 font-weight-bold">
+										Bahar Festivali
+									</a>
+									<a href="artist.detail.html#" class="list-subtitle d-block text-muted h-1x subtitle ajax ">
+										Bahar aylarında müthiş bir etkinlik
+									</a>
+								</div>
+								<div class="list-footer ">
+									<div class="text-muted text-sm">
+										Mayıs 11, 10:00
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="list-item list-overlay r mb-3">
+							<div class="media media-4x3 gd-success">
+								<a href="blog.detail.html#" class="ajax media-content " style="background-image:url( )">
+								</a>
+								<div class="media-action ">
+								</div>
+							</div>
+							<div class="list-content p-4">
+								<div class="list-body ">
+									<a href="blog.detail.html#" class="list-title title ajax h5 font-weight-bold">
+										Müzik Festivali 2025
+									</a>
+									<a href="artist.detail.html#" class="list-subtitle d-block text-muted h-1x subtitle ajax ">
+										2025 yılının son aylarında heyecan verici bir etkinlik
+									</a>
+								</div>
+								<div class="list-footer ">
+									<div class="text-muted text-sm">
+										Kasım 8, 11:00
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="heading pt-5 pb-3 d-flex ">
+					<div>
+						@* <div class="text-muted sr-item">Blog</div> *@
+						<h5 class="text-highlight sr-item">Blog</h5>
+					</div>
+					<span class="flex"></span>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div class="list-item r">
+							<div class="media media-16x9">
+								<a href="blog.detail.html#" class="ajax media-content " style="background-image:url(/Bepop/assets/img/b15.jpg)">
+								</a>
+								<div class="media-action ">
+								</div>
+							</div>
+							<div class="list-content ">
+								<div class="list-body ">
+									<a href="blog.detail.html#" class="list-title title ajax ">
+										Melankoli Tınıları
+									</a>
+								</div>
+								<div class="list-footer ">
+									<div class="text-muted text-sm">
+										Şubat 24, 12:30
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="list-item r">
+							<div class="media media-16x9">
+								<a href="blog.detail.html#" class="ajax media-content " style="background-image:url(/Bepop/assets/img/b16.jpg)">
+								</a>
+								<div class="media-action ">
+								</div>
+							</div>
+							<div class="list-content ">
+								<div class="list-body ">
+									<a href="blog.detail.html#" class="list-title title ajax ">
+										Rock'n Roll Günlüğü
+									</a>
+								</div>
+								<div class="list-footer ">
+									<div class="text-muted text-sm">
+										Mayıs 26, 13:30
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="list-item r">
+							<div class="media media-16x9">
+								<a href="blog.detail.html#" class="ajax media-content " style="background-image:url(/Bepop/assets/img/b17.jpg)">
+								</a>
+								<div class="media-action ">
+								</div>
+							</div>
+							<div class="list-content ">
+								<div class="list-body ">
+									<a href="blog.detail.html#" class="list-title title ajax ">
+										Güneş Gözlüğü ve Caz
+									</a>
+								</div>
+								<div class="list-footer ">
+									<div class="text-muted text-sm">
+										Haziran 9, 09:34
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+@section Scripts {
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".btn-play").forEach(btn => {
+				btn.addEventListener("click", () => {
+					const url = btn.getAttribute("data-source");
+					if (url) {
+						const audio = new Audio(url);
+						audio.play();
+					}
+				});
+			});
+		});
+	</script>
+
+
+	
+
+}

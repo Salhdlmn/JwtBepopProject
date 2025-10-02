@@ -1,0 +1,215 @@
+﻿@model BepopStreamProject.Models.ArtistDetailViewModel
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <div class="page-content page-container" id="page-content">
+        <div class="padding sr">
+            <div class="page-hero" data-id="@Model.ArtistId" data-source="@Model.ImageUrl">
+                <div class="media bg-media">
+                    <div class="media-content" style="background-image:url(@Model.ImageUrl)"></div>
+                </div>
+
+                <div class="pos-rlt">
+                    <!-- Sanatçı İsmi -->
+                    <h1 class="display-3 font-weight-bold text-white">@Model.Name</h1>
+
+                    <!-- Alt bilgi (ülke veya başka bir şey) -->
+                    <span class="hide subtitle">@Model.Country</span>
+
+                    <!-- Toplam şarkı sayısı -->
+                    <span class="text-muted">@Model.Songs.Count track(s)</span>
+
+                    <!-- Takip butonları -->
+                    <div class="my-3">
+                        <button class="btn btn-icon btn-play btn-rounded gd-primary">
+                            <i data-feather="play"></i>
+                        </button>
+
+                        <button class="btn btn-sm btn-outline-light btn-rounded mx-3">
+                            <span class="d-inline">Follow</span>
+                        </button>
+                    </div>
+
+                    <!-- Sosyal medya örnek -->
+                    <div class="mb-2">
+                        <span class="text-muted">Social: </span>
+                        <a href="#" class="text-highlight">Fb</a>,
+                        <a href="#" class="text-highlight">Tw</a>,
+                        <a href="#" class="text-highlight">Ig</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="d-md-flex pos-rlt">
+                <div class="flex">
+                    <div class="d-flex">
+                        <ul class="nav nav-sm text-sm nav-pills nav-rounded py-4">
+         
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tracks" data-toggle="tab">Tracks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#albums" data-toggle="tab">Album</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                    
+
+                        <div class="tab-pane fade" id="tracks">
+                            <div class="row list-row">
+                                @foreach (var song in Model.Songs)
+                                {
+                                    <div class="col-12 list-item r mb-5" data-id="@song.SongId">
+                                        <div class="media">
+                                            <a href="@Url.Action("Detail", "Song", new { id = song.SongId })"
+                                               class="ajax media-content"
+                                               style="background-image:url(@song.ImageUrl)">
+                                            </a>
+
+                                            <div class="media-action media-action-overlay">
+                                                <button class="btn btn-icon no-bg no-shadow hide-row" data-toggle="class">
+                                                    <i data-feather="heart" class="active-fill"></i>
+                                                </button>
+                                                <button class="btn btn-raised btn-icon btn-rounded bg--white btn-play"
+                                                        data-source="@song.FileUrl">
+                                                    <i data-feather="play"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-content text-center">
+                                            <div class="list-body">
+                                                <a href="@Url.Action("Detail", "Song", new { id = song.SongId })"
+                                                   class="list-title title ajax h-1x">
+                                                    @song.Title
+                                                </a>
+                                                <a href="@Url.Action("Detail", "Artist", new { id = Model.ArtistId })"
+                                                   class="list-subtitle d-block text-muted h-1x subtitle ajax">
+                                                    @song.ArtistName
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+
+                     <div class="tab-pane fade" id="albums">
+                        <div class="row list mb-4">
+                            
+                            @foreach (var album in Model.Albums)
+                            {
+                                <div class="col-4 col-sm-4 col-md-3 col-lg-3 py-3">
+                                    <div class="list-item list-hover r mb-4">
+                                        <div class="media">
+                                            <a href="@Url.Action("Detail", "Album", new { id = album.AlbumId })"
+                                               class="ajax media-content"
+                                               style="background-image:url(@album.CoverImageUrl)">
+                                            </a>
+                                        </div>
+                                        <div class="list-content text-center">
+                                            <div class="list-body">
+                                                <a href="@Url.Action("Detail", "Album", new { id = album.AlbumId })"
+                                                   class="list-title title ajax h-1x">
+                                                    @album.Title
+                                                </a>
+                                                <span class="list-subtitle d-block text-muted h-1x subtitle ajax">
+                                                    @album.ArtistName (@album.ReleaseDate.Year)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+      
+                    </div>
+                </div>
+                <div style="min-width: 4rem"></div>
+                <div class="w-xl w-auto-sm no-shrink">
+                    <div class="sticky">
+                        <div class="list mb-5">
+                            <div class="list-item list-overlay r">
+                                <div class="media ">
+                                    <a href="item.detail.html#" class="ajax media-content " style="background-image:url(/Bepop/assets/img/b17.jpg)">
+                                    </a>
+                                    <div class="media-action ">
+                                    </div>
+                                </div>
+                                <div class="list-content p-5 text-center">
+                                    <div class="list-body ">
+                                        <a href="item.detail.html#" class="list-title title ajax h3 font-weight-bold">
+                                            Hip-Hop Chart 100
+                                        </a>
+                                        <a href="artist.detail.html#" class="list-subtitle d-block text-muted h-1x subtitle ajax ">
+                                            The hottest rap right now.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="text text-muted sr-item">Top tracks</h6>
+                        <div class="row list-row">
+                        @foreach (var item in Model.TopTracks)
+                        {
+                            <div class="col-12" data-id="@item.SongId" data-category="@string.Join(", ", item.Genres)" data-tag="@item.ArtistName" data-source="@item.FileUrl">
+                                <div class="list-item r">
+                                    <div class="media">
+                                        <a href="#" class="ajax media-content" style="background-image:url(@item.ImageUrl)">
+                                        </a>
+                                        <div class="media-action">
+                                            <button class="btn btn-icon no-bg no-shadow hide-row" data-toggle="class">
+                                                <i data-feather="heart" class="active-fill"></i>
+                                            </button>
+
+                                            @* Kullanıcı seviyesi kontrolü *@
+                                            @if (ViewBag.UserPackageId >= item.Level)
+                                            {
+                                                <button class="btn btn-raised btn-icon btn-rounded bg--white btn-play" data-source="@item.FileUrl">
+                                                    <i data-feather="play"></i>
+                                                </button>
+                                            }
+                                            else
+                                            {
+                                                <button class="btn btn-icon btn-rounded bg--gray" disabled title="Seviyen yetersiz">
+                                                    <i data-feather="lock"></i>
+                                                </button>
+                                            }
+
+                                            <button class="btn btn-icon no-bg no-shadow hide-row btn-more" data-toggle="dropdown">
+                                                <i data-feather="more-horizontal"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-content text-center">
+                                        <div class="list-body">
+                                            <a href="#" class="list-title title ajax h-1x">@item.Title</a>
+                                            <a href="#" class="list-subtitle d-block text-muted h-1x subtitle ajax">
+                                                @item.ArtistName
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
