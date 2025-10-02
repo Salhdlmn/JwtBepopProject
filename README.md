@@ -20,7 +20,7 @@ Proje boyunca **JWT Authentication** ve **ML.NET Recommendation System** gibi il
 ## 🛠 Kullanılan Teknolojiler  
 
 ### Backend  
-💻 **ASP.NET Core 6.0** – Modern backend geliştirme  
+💻 **ASP.NET Core 9.0** – Modern backend geliştirme  
 🗄 **Entity Framework Core** – ORM ve veritabanı işlemleri  
 📊 **LINQ** – Veri sorgulama  
 🛢 **Microsoft SQL Server** – Veritabanı yönetimi  
@@ -36,13 +36,7 @@ Proje boyunca **JWT Authentication** ve **ML.NET Recommendation System** gibi il
 
 ---
 
-## 📚 Öğrendiklerim  
 
-Bu proje sürecinde:  
-- **JWT (JSON Web Token) Authentication** yapısını derinlemesine öğrendim ve kullanıcı doğrulama/authorization mekanizmasını projeye entegre ettim.  
-- **ML.NET ile Recommendation System** kurarak kullanıcıların dinleme alışkanlıklarına göre kişiselleştirilmiş şarkı tavsiyeleri sunmayı başardım.  
-
----
 
 ## 📸 Proje Görselleri  
 
